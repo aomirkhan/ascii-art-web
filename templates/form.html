@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII-ART</title>
+    <style> 
+    label{
+        color: white;
+    }
+    body{
+        background-image: url("https://wallpaperaccess.com/download/1mb-626330");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  background-size: cover;
+    }
+    input{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a{
+        color: white;
+    }
+    h1{
+        color: rgb(22, 22, 4);
+        text-align: center;
+    }
+    textarea{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: scroll;
+        background-color: lightgray;
+        padding: 20px;
+        box-sizing: border-box;
+        
+    }
+    output{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: scroll;
+        background-color: lightgray;
+        padding: 20px;
+       
+        
+    }
+    select{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}button{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+#range1 {
+    width:  1200px;
+        height: 700px;
+}
+#range2{
+    width: 700px;
+        height: 300px;
+}
+
+    </style>
+</head>
+<body>
+    <h1><a href="http://127.0.0.1:8000"> ASCII-ART </a> </h1>
+    
+    <!-- <form action="/ascii-art" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <button type="submit">Submit</button>
+    </form> -->
+    <div id="text" class="parent">
+        <form action="/ascii-art" method="post">
+            <div class="button-row">
+                <textarea  wrap="off" id="range2" name="convert" ></textarea>
+                &emsp;
+                <label for="fonts">Choose:</label>
+            <select name="fonts" id="banner">
+                <option value="standard" >Standard</option>
+                <option value="shadow" selected>Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+            <br>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</hr>
+    <br> 
+    <div id="output" class="parent">
+    <div><output id="range1"><pre>{{.}}</pre></ourput></div>
+    <br>
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+    </div>
+    
+</body>
+</html>
+
