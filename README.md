@@ -17,6 +17,5 @@
 ``` 
 go run . 
 ```
-### Contributors
-* @rzhampeis 
+### Contributors 
 * @aomirhan  
